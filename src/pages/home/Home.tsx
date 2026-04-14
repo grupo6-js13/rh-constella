@@ -20,7 +20,7 @@ function Home() {
                     </p>
                     <div className="flex flex-wrap gap-4">
                         <Link
-                            to="/colaboradores"
+                            to="/gestao"
                             className="bg-[#8bff84] text-[#002423] px-10 py-5 rounded-2xl text-lg font-bold hover:bg-white transition-all shadow-xl flex items-center gap-2"
                         >
                             Ver Colaboradores

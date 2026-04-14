@@ -10,11 +10,11 @@ function Sobre() {
     ]
 
     const time = [
-        { nome: 'Jeaninny', cargo: 'Developer', bio: 'Desenvolvedora apaixonada por tecnologia e soluções corporativas.', github: '#', linkedin: '#' },
-        { nome: 'Sofia', cargo: 'Developer', bio: 'Desenvolvedora focada em criar experiências digitais memoráveis.', github: '#', linkedin: '#' },
-        { nome: 'Jhonatha', cargo: 'Developer', bio: 'Desenvolvedor especialista em arquitetura de sistemas escaláveis.', github: '#', linkedin: '#' },
-        { nome: 'Josué', cargo: 'Developer', bio: 'Desenvolvedor focado em performance e qualidade de código.', github: '#', linkedin: '#' },
-        { nome: 'Marcus', cargo: 'Developer', bio: 'Desenvolvedor responsável pela infraestrutura e deploy do projeto.', github: '#', linkedin: '#' },
+        { nome: 'Jeaninny', cargo: 'Developer', bio: 'Desenvolvedora apaixonada por tecnologia e soluções corporativas.', github: 'https://github.com/jeaninny', linkedin: 'https://www.linkedin.com/in/jeaninnyteixeira' },
+        { nome: 'Sofia', cargo: 'Developer', bio: 'Desenvolvedora focada em criar experiências digitais memoráveis.', github: 'https://github.com/frsofitware', linkedin: 'https://www.linkedin.com/in/sofia-sabrina-silva' },
+        { nome: 'Jhonatha', cargo: 'Developer', bio: 'Desenvolvedor especialista em arquitetura de sistemas escaláveis.', github: 'https://github.com/Bfr-Jhon', linkedin: 'https://www.linkedin.com/in/jhonatha-oliveira/' },
+        { nome: 'Josué', cargo: 'Developer', bio: 'Desenvolvedor focado em performance e qualidade de código.', github: 'https://github.com/Josue-Bravo', linkedin: 'www.linkedin.com/in/josue-bravo' },
+        { nome: 'Marcus', cargo: 'Developer', bio: 'Desenvolvedor responsável pela infraestrutura e deploy do projeto.', github: 'https://github.com/mwendellsmce', linkedin: 'https://www.linkedin.com/in/marcus-wendell' },
     ]
 
     return (
