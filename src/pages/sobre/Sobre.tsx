@@ -10,11 +10,11 @@ function Sobre() {
     ]
 
     const time = [
-        { nome: 'Jeaninny', cargo: 'Developer', bio: 'Desenvolvedora apaixonada por tecnologia e soluções corporativas.', github: 'https://github.com/jeaninny', linkedin: 'https://www.linkedin.com/in/jeaninnyteixeira' },
-        { nome: 'Sofia', cargo: 'Developer', bio: 'Desenvolvedora focada em criar experiências digitais memoráveis.', github: 'https://github.com/frsofitware', linkedin: 'https://www.linkedin.com/in/sofia-sabrina-silva' },
-        { nome: 'Jhonatha', cargo: 'Developer', bio: 'Desenvolvedor especialista em arquitetura de sistemas escaláveis.', github: 'https://github.com/Bfr-Jhon', linkedin: 'https://www.linkedin.com/in/jhonatha-oliveira/' },
-        { nome: 'Josué', cargo: 'Developer', bio: 'Desenvolvedor focado em performance e qualidade de código.', github: 'https://github.com/Josue-Bravo', linkedin: 'www.linkedin.com/in/josue-bravo' },
-        { nome: 'Marcus', cargo: 'Developer', bio: 'Desenvolvedor responsável pela infraestrutura e deploy do projeto.', github: 'https://github.com/mwendellsmce', linkedin: 'https://www.linkedin.com/in/marcus-wendell' },
+        { nome: 'Jeaninny', cargo: 'Developer', bio: 'Código limpo e soluções práticas.', github: 'https://github.com/jeaninny', linkedin: 'https://www.linkedin.com/in/jeaninnyteixeira', foto: 'https://github.com/jeaninny.png' },
+        { nome: 'Sofia', cargo: 'Developer', bio: 'Cria experiências digitais memoráveis.', github: 'https://github.com/frsofitware', linkedin: 'https://www.linkedin.com/in/sofia-sabrina-silva', foto: 'https://github.com/frsofitware.png' },
+        { nome: 'Jhonatha', cargo: 'Developer', bio: 'Especialista em arquitetura de sistemas escaláveis.', github: 'https://github.com/Bfr-Jhon', linkedin: 'https://www.linkedin.com/in/jhonatha-oliveira', foto: 'https://github.com/Bfr-Jhon.png' },
+        { nome: 'Josué', cargo: 'Developer', bio: 'Foco em performance e qualidade de código.', github: 'https://github.com/Josue-Bravo', linkedin: 'https://www.linkedin.com/in/josue-bravo', foto: 'https://github.com/Josue-Bravo.png' },
+        { nome: 'Marcus', cargo: 'Developer', bio: 'Responsável pela infraestrutura e deploy do projeto.', github: 'https://github.com/mwendellsmce', linkedin: 'https://www.linkedin.com/in/marcus-wendell', foto: 'https://github.com/mwendellsmce.png' },
     ]
 
     return (
@@ -65,9 +65,12 @@ function Sobre() {
                             key={membro.nome}
                             className="bg-[#0a2e2e]/60 backdrop-blur-xl border border-white/10 p-8 rounded-[2.5rem] flex flex-col items-center text-center gap-4 hover:-translate-y-2 transition-all duration-500"
                         >
-                            <div className="w-20 h-20 rounded-2xl bg-[#8bff84]/20 flex items-center justify-center text-[#8bff84] font-bold text-2xl border border-[#8bff84]/10">
-                                {membro.nome.substring(0, 2).toUpperCase()}
-                            </div>
+                            <img
+                                src={membro.foto}
+                                alt={membro.nome}
+                                className="w-20 h-20 rounded-full object-cover border border-[#8bff84]/10"
+                            />
+
                             <div>
                                 <h3 className="text-lg font-bold text-white">{membro.nome}</h3>
                                 <span className="text-xs font-bold text-[#8bff84] uppercase tracking-widest">{membro.cargo}</span>

@@ -1,73 +1,117 @@
-# React + TypeScript + Vite
+# Constella RH - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<br />
 
-Currently, two official plugins are available:
+<div align="center">
+    <img src="https://ik.imagekit.io/jeaninny/constella-rh-logo.png" title="source: imagekit.io"/>
+</div>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+<br /><br />
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 1. Descrição
 
-## Expanding the ESLint configuration
+O **Constella RH** é uma aplicação Frontend desenvolvida em React. A aplicação demonstra, de forma clara e funcional, como sistemas podem registrar e gerenciar informações de colaboradores, refletindo princípios fundamentais da engenharia de software como organização, clareza de dados e arquitetura simples.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 2. Recursos
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+1. Página Home com apresentação do sistema e monitoramento de dados
+2. Página Sobre com informações do projeto e do time de desenvolvimento
+3. Console de Gerenciamento com listagem de colaboradores
+4. Alternância entre visualização em grid e em lista
+5. Interface responsiva com design moderno e paleta de cores consistente
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## 3. Capturas de Tela
+
+
+
+<div align="center">
+    <img src="mudar" title="source: imgur.com" width="50%"/>
+</div>
+
+---
+
+## 4. Tecnologias
+
+| Item                         | Descrição  |
+| ---------------------------- | ---------- |
+| **Servidor**                 | Node JS    |
+| **Linguagem de programação** | TypeScript |
+| **Biblioteca**               | React JS   |
+| **Build**                    | Vite       |
+| **Framework de Estilização** | Tailwind CSS v4 |
+| **Ícones**                   | Phosphor Icons |
+
+---
+
+## 5. Pré-requisitos
+
+Antes de iniciar, certifique-se de ter as seguintes ferramentas instaladas:
+
+- [Node.js](https://nodejs.org/) (v16+)
+- [npm](https://www.npmjs.com/)
+- API NestJS ([Repositório da API](https://github.com/grupo6-js13/rh_backend))
+
+---
+
+## 6. Configuração e Execução
+
+1. Clone o repositório do Projeto
+2. Instale as dependências: `npm install`
+3. Clone o repositório do Projeto Backend: [Link](https://github.com/grupo6-js13/rh_backend)
+4. Siga as instruções de **Configuração e Execução** descritas no README do Projeto Backend
+5. Crie um arquivo `.env` na raiz do projeto e adicione a variável:
+```
+VITE_API_URL=http://localhost:3000
+```
+6. Execute o Projeto React: `npm run dev`
+7. A aplicação React estará disponível no endereço: `http://localhost:5173`
+
+---
+
+## 7. Estrutura do Projeto
+
+```plaintext
+src/
+│
+├── components/       # Componentes reutilizáveis
+│   ├── card/         # Card de colaborador
+│   ├── footer/       # Rodapé da aplicação
+│   └── navbar/       # Barra de navegação
+│
+├── pages/            # Páginas da aplicação
+│   ├── gestao/       # Console de gerenciamento
+│   ├── home/         # Página inicial
+│   └── sobre/        # Página sobre o projeto e o time
+│
+├── util/             # Dados e interfaces da aplicação
+│   └── data.ts       # Interface Colaborador e dados de teste
+│
+├── App.css           # Estilos globais do App
+├── App.tsx           # Componente principal e configuração de rotas
+├── index.css         # Estilos globais e importação do Tailwind
+└── main.tsx          # Ponto de entrada da aplicação
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 8. Como Contribuir
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. Faça um fork do projeto
+2. Crie uma branch com a sua feature (`git checkout -b minha-feature`)
+3. Commit suas mudanças (`git commit -m 'Adiciona nova feature'`)
+4. Faça um push para a branch (`git push origin minha-feature`)
+5. Abra um Pull Request
+
+---
+
+## 9. Autores
+
+**Orbyte - Onde as ideias orbitam em torno de conhecimento e tecnologia**
+
+🔗 **GitHub:** https://github.com/grupo6-js13/
+🔗 **E-mail:** grupo6js13@gmail.com

@@ -35,6 +35,41 @@ const colaboradores: Colaborador[] = [
         salario: 7800,
         data_ingresso: '2022-05-05'
     },
+    {
+        id: 5,
+        nome: 'Fernanda Costa',
+        cargo: 'UX Designer',
+        salario: 6500,
+        data_ingresso: '2023-06-01'
+    },
+    {
+        id: 6,
+        nome: 'Lucas Pereira',
+        cargo: 'Analista de Dados',
+        salario: 7000,
+        data_ingresso: '2022-08-15'
+    },
+    {
+        id: 7,
+        nome: 'Beatriz Souza',
+        cargo: 'Scrum Master',
+        salario: 9000,
+        data_ingresso: '2021-03-20'
+    },
+    {
+        id: 8,
+        nome: 'Rafael Mendes',
+        cargo: 'DevOps Engineer',
+        salario: 9500,
+        data_ingresso: '2021-07-10'
+    },
+    {
+        id: 9,
+        nome: 'Camila Rocha',
+        cargo: 'QA Engineer',
+        salario: 6800,
+        data_ingresso: '2023-09-05'
+    },
 ]
 
 export default colaboradores

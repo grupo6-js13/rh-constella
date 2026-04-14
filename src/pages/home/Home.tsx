@@ -30,7 +30,7 @@ function Home() {
                 </div>
 
                 {/* Fundo decorativo */}
-                <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-[40rem] h-[40rem] bg-[#8bff84]/10 rounded-full blur-[120px]" />
+                <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-160 h-160 bg-[#8bff84]/10 rounded-full blur-[120px]" />
                 <div className="absolute inset-0 opacity-[0.03] pointer-events-none"
                     style={{ backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
             </section>
@@ -48,7 +48,10 @@ function Home() {
                         </div>
                         <p className="text-sm font-bold text-slate-400 mb-3 uppercase tracking-[0.25em]">Total de Colaboradores</p>
                         <h3 className="text-6xl font-bold text-white font-mono tracking-tighter mb-6">3000</h3>
-                        <p className="text-xs font-bold text-slate-500 uppercase tracking-[0.15em]">Aguardando conexão</p>
+                        <p className="text-xs font-bold text-slate-500 uppercase tracking-[0.15em] flex items-center gap-2">
+                            <span className="w-1.5 h-1.5 rounded-full bg-[#8bff84]" />
+                            Dados simulados
+                        </p>
                     </div>
 
                     <div className="bg-[#0a2e2e]/60 backdrop-blur-xl border border-white/10 p-8 rounded-[2.5rem] shadow-2xl">
@@ -57,7 +60,10 @@ function Home() {
                         </div>
                         <p className="text-sm font-bold text-slate-400 mb-3 uppercase tracking-[0.25em]">Cargos Cadastrados</p>
                         <h3 className="text-6xl font-bold text-white font-mono tracking-tighter mb-6">27</h3>
-                        <p className="text-xs font-bold text-slate-500 uppercase tracking-[0.15em]">Aguardando conexão</p>
+                        <p className="text-xs font-bold text-slate-500 uppercase tracking-[0.15em] flex items-center gap-2">
+                            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
+                            Dados simulados
+                        </p>
                     </div>
 
                     <div className="bg-[#0a2e2e]/60 backdrop-blur-xl border border-white/10 p-8 rounded-[2.5rem] shadow-2xl">
@@ -66,7 +72,10 @@ function Home() {
                         </div>
                         <p className="text-sm font-bold text-slate-400 mb-3 uppercase tracking-[0.25em]">Média Salarial</p>
                         <h3 className="text-6xl font-bold text-white font-mono tracking-tighter mb-6">8000</h3>
-                        <p className="text-xs font-bold text-slate-500 uppercase tracking-[0.15em]">Aguardando conexão</p>
+                        <p className="text-xs font-bold text-slate-500 uppercase tracking-[0.15em] flex items-center gap-2">
+                            <span className="w-1.5 h-1.5 rounded-full bg-amber-400" />
+                            Dados simulados
+                        </p>
                     </div>
 
                 </div>

@@ -20,9 +20,14 @@ function Footer() {
                         </div>
                     </div>
 
-                    <p className="text-white/40 text-sm font-medium">
-                        © {data} Constella RH — Desenvolvido por Grupo 6
-                    </p>
+                    <div className="text-white/40 text-sm font-medium flex flex-col items-center">
+                        <span>© {data} Constella RH — Desenvolvido por</span>
+                        <img
+                            src="https://ik.imagekit.io/jeaninny/Logo_digital_em_vetor_orbyte.png"
+                            alt="Orbyte"
+                            className="h-20 w-16 object-contain -mt-5"
+                        />
+                    </div>
 
                     <div className="flex gap-8 text-sm font-bold text-white/60">
                         <Link to="/sobre" className="hover:text-[#8bff84] transition-colors">Sobre</Link>
